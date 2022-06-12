@@ -31,8 +31,8 @@ https://kusama.polkassembly.io/tip/0xf533b0e29f523618f24be599d8eae184823820d46dd
 
 - https://fearlesswallet.io (https://github.com/soramitsu/fearless-iOS/issues/673)
 - https://polkawallet.io (https://github.com/polkawallet-io/app/issues/179)
+- https://novawallet.io (https://github.com/nova-wallet/nova-ios-app/issues/1)
 - https://atomicwallet.io/polkadot-wallet (TBC)
-- https://novawallet.io (TBC)
 - https://walletnow.app/polkadot-wallet (TBC)
 - https://trustwallet.com/polkadot-wallet (TBC)
 
