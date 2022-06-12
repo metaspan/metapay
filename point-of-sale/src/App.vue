@@ -77,6 +77,7 @@ export default Vue.extend<IData, IMethods, IComputed, IProps>({
     this.matcher = window.matchMedia('(prefers-color-scheme: dark)')
     // set the initial state from the matcher  await this.onDark(this.matcher)
     this.matcher.addListener(this.onDark)
+    this.onDark(this.matcher)
     this.$store.dispatch('init')
   }
 })
