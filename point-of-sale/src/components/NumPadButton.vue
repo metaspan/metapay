@@ -1,8 +1,8 @@
 <template>
-  <v-btn :large="$vuetify.breakpoint.mobile"
+  <v-btn :medium="$vuetify.breakpoint.mobile"
     :x-large="!$vuetify.breakpoint.mobile" rounded raised outlined class="ma-2"
-    @click="onClick()"
-    @dblclick.stop="onClick()">
+    @click.stop="onClick()"
+    @dblclick.prevent="onDblClick()">
     <span class="text-h4" v-show="!hasIconSlot">{{value}}</span>
     <slot name="icon"></slot>
   </v-btn>
@@ -18,6 +18,7 @@ interface IData {
 // eslint-disable-next-line
 interface IMethods {
   onClick(): void
+  onDblClick(): void
 }
 // eslint-disable-next-line
 interface IComputed {
@@ -47,8 +48,12 @@ export default Vue.extend<IData, IMethods, IComputed, IProps>({
   // },
   methods: {
     onClick () {
-      // console.debug('NumPadButton.vue: onInput', this.value)
+      console.debug('NumPadButton.vue: onClick', this.value)
       this.$emit('onInput', this.value)
+    },
+    onDblClick () {
+      console.debug('NumPadButton.vue: onDblClick', this.value)
+      // this.$emit('onInput', this.value)
     }
   }
   // created () {
