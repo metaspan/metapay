@@ -7,7 +7,8 @@ const currencies = [
     chain: 'substrate',
     // icon: '//yt3.ggpht.com/ytc/AKedOLQRz9zG3TydtrteUMvO8mfCvYu80CcfOwotpGgh=s68-c-k-c0x00ffffff-no-rj',
     // endpoint: 'wss://westend-rpc.polkadot.io', // 'wss://kusama-rpc.parity.io',
-    endpoint: 'wss://pub.elara.patract.io/westend',
+    // endpoint: 'wss://pub.elara.patract.io/westend',
+    endpoint: 'wss://westend-rpc.polkadot.io',
     decimals: 8,
     minimumTransaction: 0.00333
   },

@@ -13,7 +13,7 @@
       <v-btn icon @click="toggleFullscreen"><v-icon>mdi-fullscreen{{fullscreen ? '-exit' : ''}}</v-icon></v-btn>
     </v-toolbar-items>
     <v-spacer></v-spacer>
-    <v-btn>{{isReady}}</v-btn>
+    <!-- <v-btn>{{isReady}}</v-btn> -->
     <v-btn icon to="/" v-show="showHome"><v-icon>mdi-home</v-icon></v-btn>
     <v-app-bar-nav-icon @click.stop="toggleDrawer"></v-app-bar-nav-icon>
 

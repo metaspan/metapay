@@ -58,12 +58,17 @@ const polkadot: Module<PolkadotState, IRootState> = {
   actions: {
     async init ({ state, commit }) {
       console.debug('store/modules/polkadot: init()', state.currency)
+      if (window.$polkadot) {
+        // const isReady = await window.$polkadot.isReady
+        // console.debug('isReady', isReady)
+        await window.$polkadot.disconnect()
+      }
       const wsProvider = new WsProvider(state.currency.endpoint)
       const api = await ApiPromise.create({ provider: wsProvider })
       window.$polkadot = api
       try {
-        const gh = await api.genesisHash.toString() // .toHex()
         await commit('SET_WALLET', testWallets[state.currency.code])
+        const gh = await window.$polkadot.genesisHash.toString() // .toHex()
         await commit('SET_GENESIS_HASH', gh)
         console.debug('genesisHash', gh)
       } catch (err) {
