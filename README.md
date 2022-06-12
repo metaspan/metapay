@@ -1,4 +1,5 @@
-# metapay
+# met🌐pay
+
 Crypto payments module for POS/web/shop
 
 
@@ -25,6 +26,15 @@ https://kusama.polkassembly.io/tip/0xf533b0e29f523618f24be599d8eae184823820d46dd
 - Hosting options
   - self hosted
   - SAAS from metaspan
+
+# Supporting Wallets
+
+- https://fearlesswallet.io (https://github.com/soramitsu/fearless-iOS/issues/673)
+- https://polkawallet.io (https://github.com/polkawallet-io/app/issues/179)
+- https://atomicwallet.io/polkadot-wallet (TBC)
+- https://novawallet.io (TBC)
+- https://walletnow.app/polkadot-wallet (TBC)
+- https://trustwallet.com/polkadot-wallet (TBC)
 
 # How to contribute
 
